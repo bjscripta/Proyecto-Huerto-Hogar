@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario - Productos Orgánicos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HuertoHogar</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Nosotros</a></li> 
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <hr>
+        
+        <h2>Registro de usuario</h2>
+        
+        <form>
+            <div class="form-group">
+                <label for="fullname">NOMBRE COMPLETO</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">CORREO</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="confirm-email">CONFIRMAR CORREO</label>
+                <input type="email" id="confirm-email" name="confirm-email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">CONTRASEÑA</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="confirm-password">CONFIRMAR CONTRASEÑA</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">TELÉFONO <span class="optional">(opcional)</span></label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            
+            <div class="region-section">
+                <p class="select-label">... Seleccione la región ...</p>
+                
+                <div class="region-options">
+                    <select>
+                        <option>Región Metropolitana de Santiago</option>
+                        <option>Región de la Aristóteles</option>
+                        <option>Región de Nueva</option>
+                    </select>
+                </div>
+                
+                <p class="select-label">... Seleccione la comuna ...</p>
+                
+                <div class="region-options">
+                    <select>
+                        <option>Límpica</option>
+                        <option>Longuet</option>
+                        <option>Concepción</option>
+                    </select>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn-register">REGISTRAR</button>
+        </form>
+    </div>
+</body>
+</html>

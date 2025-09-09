@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('¡Gracias por suscribirte con: ' + email);
             emailInput.value = ''; // Limpiar el campo
         } else {
-            alert('Por favor, introduce tu email');
+            alert('Error, introduzca un email');
         }
     });
 });
