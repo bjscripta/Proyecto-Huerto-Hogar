@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; 
+    background-color: #F7F7F7; /*pag principal*/
+    color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #8B4513; /*color de titulos*/
+}
+
+nav {
+    background-color: #2E8B57; 
+    padding: 10px;  /*menu*/
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none; /*color del menu*/
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px; 
+    background-color: #FFD700;
+    color: #333;  /*footer/incapie de pag*/
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+footer p {
+    margin: 0;
+}
+
+/*img responsiva*/
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; 
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column; 
+        text-align: center;     
+    }
+    .contenedor .texto {
+        max-width: 100%;         
+        margin-bottom: 20px;     
+    }
+}
+
+a {
+    color: #2E8B57; /*verde emerald*/
+}
+a:hover {
+    color: #246b43; /*verd oscuro/efecto*/
+}
+
+.cuenta {
+    text-align: right;
+    margin: 10px 30px; /*usuario/sesion*/
+}
+.cuenta a {
+    color: #2E8B57;
+    text-decoration: none;
+    font-weight: bold;
+}
+.cuenta a:hover {
+    color: #246b43;
+}
+
+.contenedor {
+    display: flex;                  
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 30px;
+    background: #FFFFFF;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.contenedor .texto {
+    max-width: 50%;                 
+}
+
+.contenedor .texto h2 {
+    color: #8B4513;  
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contenedor .texto p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left; 
+}
+
+/* Estilos para el footer y formulario de suscripción */
+footer {
+    background-color: #FFD700;
+    color: #333;
+    font-weight: bold;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.subscription-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.email-label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+#email {
+    padding: 10px 12px;
+    border: 2px solid #2E8B57;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 12px;
+    transition: border-color 0.3s;
+}
+
+#email:focus {
+    border-color: #8B4513;
+    outline: none;
+}
+
+.subscribe-btn {
+    background-color: #2E8B57;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: #8B4513;
+}
+
