@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="../css/PerfAdmin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="path/to/your/logo.png" alt="Company Logo">
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li class="active"><a href="#"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="fas fa-box"></i> Productos</a></li>
+                    <li><a href="#"><i class="fas fa-users"></i> Usuarios</a></li>
+                    <li><a href="#"><i class="fas fa-clipboard-list"></i> Órdenes</a></li>
+                    <li><a href="#"><i class="fas fa-chart-bar"></i> Reportes</a></li>
+                    <li><a href="#"><i class="fas fa-cogs"></i> Ajustes</a></li>
+                    <li><a href="#"><i class="fas fa-question-circle"></i> Ayuda</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#" class="profile-link">
+                    <i class="fas fa-user-circle"></i> Perfil
+                </a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <div class="header-title">
+                    <h1>¡HOLA Administrador!</h1>
+                </div>
+            </header>
+            <div class="content-body">
+                <div class="action-buttons">
+                    <button id="btn-productos" class="btn btn-primary"><i class="fas fa-box"></i> Gestionar Productos</button>
+                    <button id="btn-usuarios" class="btn btn-primary"><i class="fas fa-users"></i> Gestionar Usuarios</button>
+                </div>
+                <div class="content-section">
+                    <h2>Sección Principal</h2>
+                    <p>Aquí se mostrará el contenido dinámico de tu panel.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="..\js\PerfAdmin.js"></script>
+</body>
+</html>
